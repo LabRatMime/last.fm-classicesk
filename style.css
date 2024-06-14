@@ -1,0 +1,334 @@
+@-moz-document url-prefix("https://www.last.fm/user") {
+.page-content {
+    background-color: #fff0!important;
+    height: 3500px;
+    margin-top: 50px;
+}
+
+.container.page-content.profile-cards-container {
+    pointer-events: none;
+}
+
+.content-top-inner-wrap {
+    display: none!important;
+    width: 0%!important;
+}
+
+h2 {
+    font-weight: bold;
+    color: #D51007;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px!important;
+}
+
+
+.col-main {
+    margin-top: 10px!important;
+    background-color: #fff0!important;
+}
+
+
+.header-title-secondary {
+    margin-top: 0px!important;
+    margin-left: 200px!important;
+}
+
+.header-title-label-wrap {
+    margin-left: 200px!important;
+    margin-top: -120px!important;
+}
+
+.header-featured-track {
+    margin-right: 26px;
+}
+
+.header-metadata-global-stats {
+    margin-top: -40px!important;
+    margin-left: 200px!important;
+}
+
+.header-message-user {
+    top: -5px!important;
+    right: 27px!important;
+}
+
+.header-featured-track {
+    color: #000!important;
+}
+
+
+.header-background {
+    display: none!important;
+}
+
+.header-info-primary--with-columns {
+    width: 100%!important;
+    margin-top: -50px!important;
+}
+
+.profile-header-set-obsession {
+    display: none!important;
+}
+
+.header-metadata {
+    margin-top: -170px!important;
+    margin-left: 200px!important;
+}
+
+.header-featured-track.header-info-primary-col2.featured-item--truncated.featured-item--right.featured-item {
+    top: -165px!important;
+    right: 10px
+}
+
+.header-message-user {
+    display: none!important;
+}
+
+
+.chartlist-play {
+    display: none!important;
+}
+
+
+.secondary-nav-item-link {
+    color: #D51007!important;
+}
+
+.secondary-nav-item-link--active::after {
+    background-color: #D51007!important;
+}
+
+.top-bar,
+.top-bar-overlay {
+    background: transparent!important;
+}
+
+
+.countbar-bar-slug {
+    background: #D51007!important;
+}
+
+.grid-items--numbered {
+    padding-left: 100px!important;
+}
+
+.grid-items-item.js-focus-controls-container {
+    margin: 2px!important;
+    border: 3px solid #fff!important;
+    outline: 2px solid #ccc;
+}
+
+.grid-items-item.grid-items-item--big.js-focus-controls-container {
+    .grid-items-cover-image-image img {
+        object-fit: fill;
+    }
+    height: 388px!important;
+}
+
+.tasteometer.tasteometer-compat-super {
+    right: 40px!important;
+    top: 10px!important;
+}
+
+.avatar.tasteometer-avatar {
+
+    border: 0px solid #e3e3e3!important;
+}
+
+.avatar.tasteometer-avatar img {
+    border-radius: 100%!important;
+}
+}
+
+@-moz-document domain("last.fm") {
+html,
+body::before {
+    background: #E3E3E3!important;
+}
+
+body {
+    font-size: 12px!important;
+    font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif !important;
+    color: #000!important;
+    background-color: #E3E3E3!important;
+    width: 1000px!important;
+    margin: 0 auto!important;
+    border: 1px solid #ccc!important;
+}
+
+.avatar,
+.auth-avatar-desktop {
+    border-radius: 0px;
+    border: 1px solid #e3e3e3;
+}
+
+.avatar img {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 0%
+}
+
+.header-title,
+.header-title-display-name,
+.featured-track-subtitle,
+.metadata-display {
+    color: #000!important;
+}
+
+.col-sidebar {
+    display: none!important;
+}
+
+.col-main {
+    width: 100%!important;
+}
+
+div.container {
+    background-image: none!important;
+    width: 100%!important;
+}
+
+div.YAD {
+    display: none!important;
+}
+
+.container.page-content {
+    background-color: #fff!important;
+}
+
+.nag-bar-message,
+.nag-bar {
+    display: none!important;
+}
+
+.player-bar {
+    display: none!important;
+    width: 0%!important;
+}
+
+.masthead {
+    background: url("https://web.archive.org/web/20091210220714im_/http://cdn.last.fm/flatness/header/headersprite.1.png")!important;
+    height: 70px!important;
+    left: 0px;
+    top: 0px!important;
+    border: 1px solid #AA0000!important;
+    box-shadow: 0px 2px 3px #aaaaaa!important;
+}
+
+.masthead-inner-wrap {
+    position: relative;
+    right: 970px;
+    top: 1px;
+    width: 300px;
+}
+
+.masthead-logo {
+    background: url("https://web.archive.org/web/20091210220714im_/http://cdn.last.fm/flatness/header/headersprite.1.png") 0 -160px!important;
+    position: relative;
+    left: 1px!important;
+    width: 110px!important;
+    height: 40px!important;
+    background-repeat: no-repeat!important;
+    text-indent: -9999px!important;
+}
+
+.masthead-logo:hover {
+    background: url("https://web.archive.org/web/20091210220714im_/http://cdn.last.fm/flatness/header/headersprite.1.png") -110px -160px!important;
+}
+
+.masthead-logo-loading {
+    display: none!important;
+}
+
+.site-auth.hidden-xs {
+    left: 420px
+}
+
+.footer {
+    color: #000;
+    background: #E3E3E3;
+}
+
+.avatar-status-dot {
+    border-radius: 0%
+}
+
+@media only screen and (max-width:1259px) {
+
+    body:not(.scrobbles-layout) .main-content {
+        margin-top: 60px;
+    }
+
+    body:not(.scrobbles-layout) .dropdown {
+        margin: -55px -30px 0px 0px;
+    }
+
+    .header-title {
+        margin-top: 15px!important;
+        margin-left: 0!important;
+    }
+
+    .header-title-secondary {
+        margin-left: 0!important;
+    }
+
+    .header-featured-track {
+        margin-right: 0;
+    }
+
+    .header-metadata-global-stats {
+        margin-left: 0!important;
+    }
+}
+}
+
+@-moz-document url-prefix("https://www.last.fm/home") {
+.recs-feed {
+    margin: 0!important;
+    top: 12px!important;
+    left: 7%!important;
+}
+}
+
+@-moz-document url-prefix("https://www.last.fm/music") {
+.header-new-content {
+    color: #000;
+    left: 0px;
+    margin-left: 200px;
+    margin-top: 0px!important;
+}
+
+.header-new-background-overlay {
+    background: #0000!important;
+}
+
+.header-new-background-image {
+    left: 0px!important;
+    margin-left: 10px!important;
+    margin-top: 25px!important;
+    width: 200px!important;
+    height: 200px!important;
+    border: 1px solid #e3e3e3!important;
+}
+
+.header-new-inner {
+    background: #0000!important;
+}
+
+._buffer.section-with-separator {
+    display: none
+}
+.trending-tracks-section-wrapper {
+    display: none
+}
+.buffer-standard.section-with-hover-control.section-with-separator.section-with-separator--xs-only {
+    display: none
+}
+.artist-header-featured-items-item {
+    display: none
+}
+}
