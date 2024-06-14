@@ -1,5 +1,5 @@
 # last.fm-classicesk
-a last.fm theme
-its reccomended to install via stylus extension
-still a work in progress
+a last.fm theme <br>
+its reccomended to install via stylus extension <br>
+still a work in progress <br>
 <img src=preview.png>
