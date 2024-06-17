@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style
-@version      20240617.04.36
+@version      20240617.04.38
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that trys to mimic the earlier days of last.fm's look
 @author       LabRatMime
@@ -116,7 +116,8 @@ h2 {
     margin-top: 4px!important;
 }
 
-.secondary-nav-item-link {
+.secondary-nav-item-link,
+.navlist-more-wrap {
     color: #D51007!important;
 }
 
