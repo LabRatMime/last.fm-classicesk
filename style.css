@@ -1,3 +1,12 @@
+/* ==UserStyle==
+@name         Classic-esk Style
+@version      20240617.04.36
+@namespace    https://userstyles.world/user/LabRatMime
+@description  A style that trys to mimic the earlier days of last.fm's look
+@author       LabRatMime
+@license      CC BY-NC-SA 4.0
+==/UserStyle== */
+
 @-moz-document url-prefix("https://www.last.fm/user") {
 .page-content {
     background-color: #fff0!important;
@@ -85,10 +94,27 @@ h2 {
 }
 
 
+#mantle_skin {
+    margin-top: 0px!important;
+}
+
+.feedback-message {
+    display: none!important;
+}
+
 .chartlist-play {
     display: none!important;
 }
 
+.dropdown-menu.dropdown--open {
+    -webkit-border-radius: 0px!important;
+    -moz-border-radius: 0px!important;
+    border-radius: 0px!important;
+    box-shadow: none!important;
+    background: #C91D23!important;
+    border: none!important;
+    margin-top: 4px!important;
+}
 
 .secondary-nav-item-link {
     color: #D51007!important;
@@ -101,11 +127,32 @@ h2 {
 .top-bar,
 .top-bar-overlay {
     background: transparent!important;
+    position: static!important;
+    height: 0px!important;
 }
 
+.dropdown {
+    background: -webkit-linear-gradient(#E21B23, #B31F23)!important;
+    background: -o-linear-gradient(#E21B23, #B31F23)!important;
+    background: -moz-linear-gradient(#E21B23, #B31F23)!important;
+    background: linear-gradient(#E21B23, #B31F23)!important;
+    border: 1px solid #AA0000!important;
+}
 
 .countbar-bar-slug {
     background: #D51007!important;
+}
+
+.shout-btn {
+    -webkit-border-radius: 0px!important;
+    -moz-border-radius: 0px!important;
+    border-radius: 0px!important;
+}
+
+
+.dropdown-inner-wrap {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
 }
 
 .grid-items--numbered {
@@ -158,11 +205,17 @@ body {
 
 .avatar,
 .auth-avatar-desktop {
-    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
     border: 1px solid #e3e3e3;
 }
 
-.avatar img {
+.avatar img,
+.cover-art img,
+.image-list-item img,
+.overlay-image img,
+.playlist-image img,
+.video-thumbnail img {
     height: 100%;
     left: 0;
     overflow: hidden;
@@ -211,7 +264,7 @@ div.YAD {
 }
 
 .masthead {
-    background: url("https://web.archive.org/web/20091210220714im_/http://cdn.last.fm/flatness/header/headersprite.1.png")!important;
+    background: url("https://raw.githubusercontent.com/LabRatMime/last.fm-classicesk/main/headersprite.1.png")!important;
     height: 70px!important;
     left: 0px;
     top: 0px!important;
@@ -227,7 +280,7 @@ div.YAD {
 }
 
 .masthead-logo {
-    background: url("https://web.archive.org/web/20091210220714im_/http://cdn.last.fm/flatness/header/headersprite.1.png") 0 -160px!important;
+    background: url("https://raw.githubusercontent.com/LabRatMime/last.fm-classicesk/main/headersprite.1.png") 0 -160px!important;
     position: relative;
     left: 1px!important;
     width: 110px!important;
@@ -237,7 +290,7 @@ div.YAD {
 }
 
 .masthead-logo:hover {
-    background: url("https://web.archive.org/web/20091210220714im_/http://cdn.last.fm/flatness/header/headersprite.1.png") -110px -160px!important;
+    background: url("https://raw.githubusercontent.com/LabRatMime/last.fm-classicesk/main/headersprite.1.png") -110px -160px!important;
 }
 
 .masthead-logo-loading {
@@ -296,10 +349,15 @@ div.YAD {
 
 @-moz-document url-prefix("https://www.last.fm/music") {
 .header-new-content {
-    color: #000;
+    color: #000!important;
     left: 0px;
     margin-left: 200px;
     margin-top: 0px!important;
+}
+
+.intabbr.js-abbreviated-counter,
+.header-metadata-tnew-title {
+    color: #000!important;
 }
 
 .header-new-background-overlay {
