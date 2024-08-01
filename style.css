@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20240801.18.55
+@version      20240801.21.28
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -8,6 +8,17 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.last.fm/user") {
+.col-sidebar.col-sidebar--long {
+    display: none!important;
+
+}
+
+.row {
+    float: left;
+    width: 100%;
+    margin-right: -330px;
+}
+
 .page-content {
     margin-top: 50px;
 }
@@ -75,12 +86,12 @@ h2 {
     .header-info-primary-col1 {
         left: 31px!important;
     }
+    background-color: #ffff;
     width: 1000px!important;
     margin-top: -50px!important;
     margin-left: -31px!important;
     border-left: 1px solid #ccc!important;
     border-right: 1px solid #ccc!important;
-
 }
 
 .profile-header-set-obsession {
@@ -112,6 +123,10 @@ h2 {
 
 .chartlist-play {
     display: none!important;
+}
+
+.chartlist-album {
+    left: 93px!important
 }
 
 .dropdown-menu.dropdown--open {
@@ -181,18 +196,27 @@ h2 {
     height: 388px!important;
 }
 
-.tasteometer.tasteometer-compat-super {
-    right: 40px!important;
-    top: 10px!important;
+.header-metadata-item--tasteometer {
+    clear: left!important;
+    left: -31px;
+    top: 13px
 }
 
-.avatar.tasteometer-avatar {
+.header-metadata-item--tasteometer::before {
+    border-left: 0px!important
+}
 
-    border: 0px solid #e3e3e3!important;
+
+.tasteometer-avatar::after {
+    display: none
 }
 
 .avatar.tasteometer-avatar img {
     border-radius: 100%!important;
+}
+
+.header-info-secondary {
+    padding-right: 0px!important;
 }
 }
 
@@ -239,12 +263,17 @@ body {
     color: #000!important;
 }
 
-.col-sidebar {
-    display: none!important;
-}
 
 .col-main {
     width: 100%!important;
+}
+
+div#content.main-content {
+    width: 100%;
+    position: relative;
+
+    padding-top: 80px!important;
+    background-color: #0000
 }
 
 div.container {
@@ -361,7 +390,6 @@ div.container.page-content {
         margin-left: 0!important;
     }
 }
-
 }
 
 @-moz-document url-prefix("https://www.last.fm/home") {
