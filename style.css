@@ -1,16 +1,14 @@
 /* ==UserStyle==
-@name         Classic-esk Style
-@version      20240617.04.38
+@name         Classic-esk Style for last.fm
+@version      20240801.18.55
 @namespace    https://userstyles.world/user/LabRatMime
-@description  A style that trys to mimic the earlier days of last.fm's look
+@description  A style that mimics the earlier last.fm look
 @author       LabRatMime
 @license      CC BY-NC-SA 4.0
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.last.fm/user") {
 .page-content {
-    background-color: #fff0!important;
-    height: 3500px;
     margin-top: 50px;
 }
 
@@ -70,9 +68,19 @@ h2 {
     display: none!important;
 }
 
+
+
+
 .header-info-primary--with-columns {
-    width: 100%!important;
+    .header-info-primary-col1 {
+        left: 31px!important;
+    }
+    width: 1000px!important;
     margin-top: -50px!important;
+    margin-left: -31px!important;
+    border-left: 1px solid #ccc!important;
+    border-right: 1px solid #ccc!important;
+
 }
 
 .profile-header-set-obsession {
@@ -201,10 +209,8 @@ body {
     background-color: #E3E3E3!important;
     width: 1000px!important;
     margin: 0 auto!important;
-    border: 1px solid #ccc!important;
 }
 
-.avatar,
 .auth-avatar-desktop {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -242,17 +248,28 @@ body {
 }
 
 div.container {
-    background-image: none!important;
     width: 100%!important;
+    background: #0000
 }
 
 div.YAD {
     display: none!important;
 }
 
-.container.page-content {
+div.container.page-content {
     background-color: #fff!important;
+    height: 100%;
+    border-left: 1px solid #ccc!important;
+    border-right: 1px solid #ccc!important;
+    border-bottom: 1px solid #ccc!important;
 }
+
+.header.header--with-avatar.header--overview.header--user {
+    border-left: 1px solid #ccc!important;
+    border-right: 1px solid #ccc!important;
+    border-top: 1px solid #ccc!important;
+}
+
 
 .nag-bar-message,
 .nag-bar {
@@ -311,6 +328,12 @@ div.YAD {
     border-radius: 0%
 }
 
+.avatar::after {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border: 0px solid #e3e3e3;
+}
+
 @media only screen and (max-width:1259px) {
 
     body:not(.scrobbles-layout) .main-content {
@@ -338,6 +361,7 @@ div.YAD {
         margin-left: 0!important;
     }
 }
+
 }
 
 @-moz-document url-prefix("https://www.last.fm/home") {
