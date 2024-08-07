@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20240807.02.54
+@version      20240807.03.03
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -596,7 +596,7 @@ div#content.main-content {
     display: none
 }
 
-.video-preview, .video-preview-replace {
+.video-preview, .video-preview-replace, .header-new-gallery-outer {
     display: none
 }
 }
