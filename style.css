@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20240801.21.28
+@version      20240807.02.54
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -8,16 +8,116 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.last.fm/user") {
-.col-sidebar.col-sidebar--long {
-    display: none!important;
-
+div#content.main-content {
+    width: 120%!important;
+    position: relative;
+    left: -100px!important;
+    padding-top: 80px!important;
+    background-color: #0000;
+    overflow: hidden
 }
 
-.row {
-    float: left;
-    width: 100%;
-    margin-right: -330px;
+.col-sidebar {
+    .about-me-sidebar {
+        margin-top: 120px;
+        h2 {
+            border-top: 0px dotted #ccc;
+        }
+    }
+    h2 {
+        position: relative;
+        font-size: 19px;
+        bottom: -10px;
+    }
+    .stationlinks.hidden-xs {
+        display: none
+    }
+    .promo-v3.hidden-xs {
+        margin-top: 2px!important
+    }
+    .more-link {
+        margin-top: -10px!important
+    }
+    .highcharts-background {
+        display: none
+    }
+    display: table!important;
+    position: absolute!important;
+    float: right!important;
+    width: 370px;
+    background: #f9f9f9;
+    top: -263px;
+    right: 0px;
+    clear: left!important;
+    border-left: 2px dotted #ccc!important;
+
+    height: 200%;
+    z-index: 1;
 }
+
+.featured-item--right {
+    text-align: left
+}
+
+.header-featured-track {
+    position: absolute!important;
+    .featured-item-heading {
+        position: absolute!important;
+        font-weight: bold;
+        color: #D51007;
+        font-size: 19px;
+        text-transform: none;
+        left: -60px;
+        top: -34px
+    }
+    .featured-item-name {
+        position: absolute!important;
+    }
+    .featured-item-artist {
+        position: absolute!important;
+        top: 25px
+    }
+    .cover-art {
+        left: -94px;
+        position: absolute!important;
+    }
+    top: -110px!important;
+    right: -10px;
+    z-index: 2;
+}
+
+.secondary-nav-item--playlists,
+.secondary-nav-item--events,
+.secondary-nav-item--tags,
+.secondary-nav-item--playlists {
+    display: none
+}
+
+.image-overlay-playlink-link.js-playlink {
+    display: none
+}
+
+.label.user-status-subscriber {
+    position: absolute;
+    left: 39px;
+    top: 52px;
+    z-index: 3
+}
+
+
+.footer {
+    color: #000;
+    background: #E3E3E3;
+    position: relative;
+    z-index: 2!important;
+}
+
+div.col-main {
+    margin-top: 10px!important;
+    background-color: #fff0!important;
+    width: 70%!important;
+}
+
 
 .page-content {
     margin-top: 50px;
@@ -39,10 +139,8 @@ h2 {
     padding-top: 10px!important;
 }
 
-
-.col-main {
-    margin-top: 10px!important;
-    background-color: #fff0!important;
+.header-title-column-ellipsis-wrap {
+    top: -13px!important
 }
 
 
@@ -54,10 +152,6 @@ h2 {
 .header-title-label-wrap {
     margin-left: 200px!important;
     margin-top: -120px!important;
-}
-
-.header-featured-track {
-    margin-right: 26px;
 }
 
 .header-metadata-global-stats {
@@ -79,9 +173,6 @@ h2 {
     display: none!important;
 }
 
-
-
-
 .header-info-primary--with-columns {
     .header-info-primary-col1 {
         left: 31px!important;
@@ -99,13 +190,8 @@ h2 {
 }
 
 .header-metadata {
-    margin-top: -170px!important;
+    margin-top: -181px!important;
     margin-left: 200px!important;
-}
-
-.header-featured-track.header-info-primary-col2.featured-item--truncated.featured-item--right.featured-item {
-    top: -165px!important;
-    right: 10px
 }
 
 .header-message-user {
@@ -155,6 +241,7 @@ h2 {
     height: 0px!important;
 }
 
+
 .dropdown {
     background: -webkit-linear-gradient(#E21B23, #B31F23)!important;
     background: -o-linear-gradient(#E21B23, #B31F23)!important;
@@ -173,14 +260,9 @@ h2 {
     border-radius: 0px!important;
 }
 
-
-.dropdown-inner-wrap {
-    padding-left: 10px!important;
-    padding-right: 10px!important;
-}
-
 .grid-items--numbered {
-    padding-left: 100px!important;
+    padding-left: 0px!important;
+     width: 900px!important;
 }
 
 .grid-items-item.js-focus-controls-container {
@@ -194,6 +276,7 @@ h2 {
         object-fit: fill;
     }
     height: 388px!important;
+   
 }
 
 .header-metadata-item--tasteometer {
@@ -263,6 +346,12 @@ body {
     color: #000!important;
 }
 
+.header-new-background {
+    background: #ffff;
+    border-left: 1px solid #ccc!important;
+    border-right: 1px solid #ccc!important;
+    border-top: 1px solid #ccc!important;
+}
 
 .col-main {
     width: 100%!important;
@@ -271,9 +360,13 @@ body {
 div#content.main-content {
     width: 100%;
     position: relative;
-
     padding-top: 80px!important;
     background-color: #0000
+}
+
+
+.col-sidebar {
+    display: none
 }
 
 div.container {
@@ -344,8 +437,15 @@ div.container.page-content {
     display: none!important;
 }
 
+.auth-dropdown-menu-wrap {
+    left: -56px!important
+}
+.auth-dropdown-menu::before {
+    left: 30px!important
+}
+
 .site-auth.hidden-xs {
-    left: 420px
+    left: 630px
 }
 
 .footer {
@@ -362,34 +462,6 @@ div.container.page-content {
     -moz-border-radius: 0px;
     border: 0px solid #e3e3e3;
 }
-
-@media only screen and (max-width:1259px) {
-
-    body:not(.scrobbles-layout) .main-content {
-        margin-top: 60px;
-    }
-
-    body:not(.scrobbles-layout) .dropdown {
-        margin: -55px -30px 0px 0px;
-    }
-
-    .header-title {
-        margin-top: 15px!important;
-        margin-left: 0!important;
-    }
-
-    .header-title-secondary {
-        margin-left: 0!important;
-    }
-
-    .header-featured-track {
-        margin-right: 0;
-    }
-
-    .header-metadata-global-stats {
-        margin-left: 0!important;
-    }
-}
 }
 
 @-moz-document url-prefix("https://www.last.fm/home") {
@@ -401,9 +473,67 @@ div.container.page-content {
 }
 
 @-moz-document url-prefix("https://www.last.fm/music") {
+div#content.main-content {
+    width: 120%!important;
+    position: relative;
+    left: -100px!important;
+    padding-top: 80px!important;
+    background-color: #0000;
+    overflow: hidden
+}
+
+.col-sidebar {
+    .about-me-sidebar {
+        margin-top: 120px;
+        h2 {
+            border-top: 0px dotted #ccc;
+        }
+    }
+    h2 {
+        position: relative;
+        font-size: 19px;
+        bottom: -10px;
+    }
+    .stationlinks.hidden-xs {
+        display: none
+    }
+    .promo-v3.hidden-xs {
+        margin-top: 2px!important
+    }
+    .more-link {
+        margin-top: -10px!important
+    }
+    .highcharts-background {
+        display: none
+    }
+    display: table!important;
+    position: absolute!important;
+    float: right!important;
+    width: 370px;
+    background: #f9f9f9;
+    top: -234px;
+    right: 0px;
+    clear: left!important;
+    border-left: 2px dotted #ccc!important;
+    height: 200%;
+    z-index: 1;
+}
+
+.featured-item--right {
+    text-align: left
+}
+
+.footer {
+    color: #000;
+    background: #E3E3E3;
+    position: relative;
+    z-index: 2!important;
+}
+
+
 .header-new-content {
     color: #000!important;
-    left: 0px;
+    left: 20px;
     margin-left: 200px;
     margin-top: 0px!important;
 }
@@ -414,16 +544,31 @@ div.container.page-content {
 }
 
 .header-new-background-overlay {
-    background: #0000!important;
+    background: #fff0!important;
 }
 
 .header-new-background-image {
-    left: 0px!important;
+    left: 19px!important;
     margin-left: 10px!important;
     margin-top: 25px!important;
     width: 200px!important;
     height: 200px!important;
     border: 1px solid #e3e3e3!important;
+}
+
+.header-new-crumb {
+    left: 4px
+}
+
+.header-new-info-desktop {
+    position: relative;
+    bottom: -30px;
+    left: -10px;
+}
+
+.header-new-title {
+    position: relative;
+    bottom: -5px
 }
 
 .header-new-inner {
@@ -440,6 +585,18 @@ div.container.page-content {
     display: none
 }
 .artist-header-featured-items-item {
+    display: none
+}
+
+.header-new.header-new--track {
+    background: #fff;
+}
+
+.lazy-shoutbox.shoutbox--with-header.section-with-separator.buffer-standard-ignore-hidden.async-content-loaded::after {
+    display: none
+}
+
+.video-preview, .video-preview-replace {
     display: none
 }
 }
