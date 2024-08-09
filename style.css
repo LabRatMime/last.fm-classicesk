@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20240807.03.03
+@version      20240809.03.36
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -472,7 +472,7 @@ div.container.page-content {
 }
 }
 
-@-moz-document url-prefix("https://www.last.fm/music") {
+@-moz-document regexp("https?://[^/]+?\\.last\\.fm/music\\/[^\\/]+\\/?$") {
 div#content.main-content {
     width: 120%!important;
     position: relative;
@@ -482,7 +482,7 @@ div#content.main-content {
     overflow: hidden
 }
 
-.col-sidebar {
+.col-sidebar.hidden-xs.buffer-standard.masonry-right-bottom {
     .about-me-sidebar {
         margin-top: 120px;
         h2 {
@@ -506,17 +506,26 @@ div#content.main-content {
     .highcharts-background {
         display: none
     }
+    .section-with-separator.buffer-standard {
+        margin-top: 6px
+    } 
     display: table!important;
     position: absolute!important;
     float: right!important;
     width: 370px;
     background: #f9f9f9;
-    top: -234px;
+    top: -294px;
     right: 0px;
     clear: left!important;
     border-left: 2px dotted #ccc!important;
     height: 200%;
     z-index: 1;
+}
+
+div.col-main {
+    margin-top: 10px!important;
+    background-color: #fff0!important;
+    width: 65%!important;
 }
 
 .featured-item--right {
@@ -599,4 +608,304 @@ div#content.main-content {
 .video-preview, .video-preview-replace, .header-new-gallery-outer {
     display: none
 }
+
+h3 {
+    font-weight: bold;
+    color: #D51007;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px!important;
+}
+
+}
+
+@-moz-document regexp("https?://[^/]+?\\.last\\.fm/music/.*/.*/.*") {
+div#content.main-content {
+    width: 120%!important;
+    position: relative;
+    left: -100px!important;
+    padding-top: 80px!important;
+    background-color: #0000;
+    overflow: hidden
+}
+
+.col-sidebar.hidden-xs.buffer-standard.masonry-right-bottom {
+    .about-me-sidebar {
+        margin-top: 120px;
+        h2 {
+            border-top: 0px dotted #ccc;
+        }
+    }
+    h2 {
+        position: relative;
+        font-size: 19px;
+        bottom: -10px;
+    }
+    .stationlinks.hidden-xs {
+        display: none
+    }
+    .promo-v3.hidden-xs {
+        margin-top: 2px!important
+    }
+    .more-link {
+        margin-top: -10px!important
+    }
+    .highcharts-background {
+        display: none
+    }
+    .section-with-separator.buffer-standard {
+        margin-top: 6px
+    } 
+    display: table!important;
+    position: absolute!important;
+    float: right!important;
+    width: 370px;
+    background: #f9f9f9;
+    top: -258px;
+    right: 0px;
+    clear: left!important;
+    border-left: 2px dotted #ccc!important;
+    height: 200%;
+    z-index: 1;
+}
+
+div.col-main {
+    margin-top: 10px!important;
+    background-color: #fff0!important;
+    width: 68%!important;
+}
+
+.featured-item--right {
+    text-align: left
+}
+
+.footer {
+    color: #000;
+    background: #E3E3E3;
+    position: relative;
+    z-index: 2!important;
+}
+
+
+.header-new-content {
+    color: #000!important;
+    left: 20px;
+    margin-left: 200px;
+    margin-top: 0px!important;
+}
+
+.intabbr.js-abbreviated-counter,
+.header-metadata-tnew-title {
+    color: #000!important;
+}
+
+.header-new-background-overlay {
+    background: #fff0!important;
+}
+
+.header-new-background-image {
+    left: 19px!important;
+    margin-left: 10px!important;
+    margin-top: 25px!important;
+    width: 200px!important;
+    height: 200px!important;
+    border: 1px solid #e3e3e3!important;
+}
+
+.header-new-crumb {
+    left: 4px
+}
+
+.header-new-info-desktop {
+    position: relative;
+    bottom: -30px;
+    left: -10px;
+}
+
+.header-new-title {
+    position: relative;
+    bottom: -5px
+}
+
+.header-new-inner {
+    background: #0000!important;
+}
+
+._buffer.section-with-separator {
+    display: none
+}
+.trending-tracks-section-wrapper {
+    display: none
+}
+.buffer-standard.section-with-hover-control.section-with-separator.section-with-separator--xs-only {
+    display: none
+}
+.artist-header-featured-items-item {
+    display: none
+}
+
+.header-new.header-new--track {
+    background: #fff;
+}
+
+.lazy-shoutbox.shoutbox--with-header.section-with-separator.buffer-standard-ignore-hidden.async-content-loaded::after {
+    display: none
+}
+
+.video-preview, .video-preview-replace, .header-new-gallery-outer {
+    display: none
+}
+
+h3 {
+    font-weight: bold;
+    color: #D51007;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px!important;
+}
+
+}
+
+@-moz-document regexp("https?://[^/]+?\\.last\\.fm/music/[^\\/]+\\/[^\\/]+\\/?$") {
+div#content.main-content {
+    width: 120%!important;
+    position: relative;
+    left: -100px!important;
+    padding-top: 80px!important;
+    background-color: #0000;
+    overflow: hidden
+}
+
+.col-sidebar.hidden-xs.buffer-standard.masonry-right-bottom {
+    .about-me-sidebar {
+        margin-top: 120px;
+        h2 {
+            border-top: 0px dotted #ccc;
+        }
+    }
+    h2 {
+        position: relative;
+        font-size: 19px;
+        bottom: -10px;
+    }
+    .stationlinks.hidden-xs {
+        display: none
+    }
+    .promo-v3.hidden-xs {
+        margin-top: 2px!important
+    }
+    .more-link {
+        margin-top: -10px!important
+    }
+    .highcharts-background {
+        display: none
+    }
+    .section-with-separator.buffer-standard {
+        margin-top: 6px
+    } 
+    display: table!important;
+    position: absolute!important;
+    float: right!important;
+    width: 370px;
+    background: #f9f9f9;
+    top: -258px;
+    right: 0px;
+    clear: left!important;
+    border-left: 2px dotted #ccc!important;
+    height: 200%;
+    z-index: 1;
+}
+
+div.col-main {
+    margin-top: 10px!important;
+    background-color: #fff0!important;
+    width: 68%!important;
+}
+
+.featured-item--right {
+    text-align: left
+}
+
+.footer {
+    color: #000;
+    background: #E3E3E3;
+    position: relative;
+    z-index: 2!important;
+}
+
+
+.header-new-content {
+    color: #000!important;
+    left: 20px;
+    margin-left: 200px;
+    margin-top: 0px!important;
+}
+
+.intabbr.js-abbreviated-counter,
+.header-metadata-tnew-title {
+    color: #000!important;
+}
+
+.header-new-background-overlay {
+    background: #fff0!important;
+}
+
+.header-new-background-image {
+    left: 19px!important;
+    margin-left: 10px!important;
+    margin-top: 25px!important;
+    width: 200px!important;
+    height: 200px!important;
+    border: 1px solid #e3e3e3!important;
+}
+
+.header-new-crumb {
+    left: 4px
+}
+
+.header-new-info-desktop {
+    position: relative;
+    bottom: -30px;
+    left: -10px;
+}
+
+.header-new-title {
+    position: relative;
+    bottom: -5px
+}
+
+.header-new-inner {
+    background: #0000!important;
+}
+
+._buffer.section-with-separator {
+    display: none
+}
+.trending-tracks-section-wrapper {
+    display: none
+}
+.buffer-standard.section-with-hover-control.section-with-separator.section-with-separator--xs-only {
+    display: none
+}
+.artist-header-featured-items-item {
+    display: none
+}
+
+.header-new.header-new--track {
+    background: #fff;
+}
+
+.lazy-shoutbox.shoutbox--with-header.section-with-separator.buffer-standard-ignore-hidden.async-content-loaded::after {
+    display: none
+}
+
+.video-preview, .video-preview-replace, .header-new-gallery-outer {
+    display: none
+}
+
+h3 {
+    font-weight: bold;
+    color: #D51007;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px!important;
+}
+
 }
