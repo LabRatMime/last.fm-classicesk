@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20240809.03.36
+@version      20240809.05.20
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -8,11 +8,15 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.last.fm/user") {
+body {
+    background-color: #E3E3E3!important;
+}
+
 div#content.main-content {
     width: 120%!important;
     position: relative;
     left: -100px!important;
-    padding-top: 80px!important;
+    padding-top: 80px;
     background-color: #0000;
     overflow: hidden
 }
@@ -50,7 +54,6 @@ div#content.main-content {
     right: 0px;
     clear: left!important;
     border-left: 2px dotted #ccc!important;
-
     height: 200%;
     z-index: 1;
 }
@@ -236,9 +239,10 @@ h2 {
 
 .top-bar,
 .top-bar-overlay {
-    background: transparent!important;
+    background: rgba(0, 0, 0, 0)!important;
     position: static!important;
     height: 0px!important;
+    display: none;
 }
 
 
@@ -262,7 +266,7 @@ h2 {
 
 .grid-items--numbered {
     padding-left: 0px!important;
-     width: 900px!important;
+    width: 900px!important;
 }
 
 .grid-items-item.js-focus-controls-container {
@@ -276,7 +280,6 @@ h2 {
         object-fit: fill;
     }
     height: 388px!important;
-   
 }
 
 .header-metadata-item--tasteometer {
@@ -303,10 +306,237 @@ h2 {
 }
 }
 
+@-moz-document regexp("https://www.last.fm/user/.*/.*") {
+.header-info-primary--with-columns {
+    .header-info-primary-col1 {
+        left: 99px!important;
+        top: 10px
+    }
+    left: -68px!important;
+    background-color: #ffff;
+    width: 1200px!important;
+    margin-top: -42px!important;
+    margin-left: -31px!important;
+    border-left: 1px solid #ccc!important;
+    border-right: 1px solid #ccc!important;
+    border-top: 1px solid #ccc!important;
+}
+
+.content-top::after {
+    display: none
+}
+
+.container.page-content {
+    margin-top: 0px!important
+}
+
+.col-sidebar {
+    .about-me-sidebar {
+        margin-top: 120px;
+        h2 {
+            border-top: 0px dotted #ccc;
+        }
+    }
+    h2 {
+        position: relative;
+        font-size: 19px;
+        bottom: -10px;
+    }
+    .stationlinks.hidden-xs {
+        display: none
+    }
+    .promo-v3.hidden-xs {
+        margin-top: 2px!important
+    }
+    .more-link {
+        margin-top: -10px!important
+    }
+    .highcharts-background {
+        display: none
+    }
+    display: table!important;
+    position: absolute!important;
+    float: right!important;
+    width: 370px;
+    background: #f9f9f9;
+    top: -109px;
+    right: 0px;
+    clear: left!important;
+    border-left: 2px dotted #ccc!important;
+
+    height: 200%;
+    z-index: 1;
+}
+
+div#content.main-content {
+    width: 120%!important;
+    position: relative;
+    left: -100px!important;
+    padding-top: 80px!important;
+    background-color: #0000;
+    overflow: hidden
+}
+
+.header-avatar {
+    bottom: 8px
+}
+}
+
+@-moz-document regexp("https://www.last.fm/user/.*/library") {
+div.col-main {
+    margin-top: 10px!important;
+    background-color: #fff0!important;
+    width: 61%!important;
+}
+
+.user-sidebar-header.date-range-header {
+    margin-top: 10px;
+    margin-left: 10px;
+    h2 {
+        border-top: 0px dotted #ccc;
+    }
+}
+.library-date-picker {
+    position: absolute;
+    top: 30px;
+    left: 120px
+}
+
+.header-featured-track.header-info-primary-col2.featured-item--truncated.featured-item--right {
+    display: none
+}
+.date-range-picker-content.disclose-hide--js-only {
+    left: -200px!important
+}
+.date-range-picker-content.disclose-hide--js-only::before {
+    left: 242px!important
+}
+}
+
+@-moz-document regexp("https://www.last.fm/user/.*/(loved|shoutbox)") {
+.col-sidebar {
+    display: none!important;
+}
+
+
+div.col-main {
+    margin-top: 10px!important;
+    background-color: #fff0!important;
+    width: 100%!important;
+}
+}
+
+@-moz-document regexp("https://www.last.fm/user/.*/(obesssions|following|followers|neighbours)") {
+.col-sidebar {
+    display: none!important;
+}
+
+div.col-main {
+    margin-top: 10px!important;
+    background-color: #fff0!important;
+    width: 110%!important;
+}
+}
+
+@-moz-document regexp("https://www.last.fm/user/.*/listening-report") {
+html,
+body::before,
+body {
+    background-color: #000!important;
+}
+
+.user-dashboard {
+        background-color: #000!important;
+}
+        
+
+div#content.main-content {
+    width: 120%!important;
+    position: relative;
+    left: -100px!important;
+    padding-top: 70px!important;
+    background-color: #0000;
+}
+
+.report-headline-top {
+    width: 91%
+}
+
+.report-headline-chart {
+    margin-right: 100px
+}
+
+.report-headline-border {
+    display: none
+}
+
+.report-box-container.report-box-container--overview {
+    margin-top: 60px;
+    top: 40px;
+    div.container.page-content {
+        background-color: #fff!important;
+    }
+}
+
+div.container.page-content {
+    background-color: #000!important;
+    padding-left: 15px!important;
+    border-left: 0px solid #ccc!important;
+    border-right: 0px solid #ccc!important;
+    border-top: 0px solid #ccc;
+}
+
+.header-info-primary--with-columns {
+    background-color: #000;
+    border-left: 0px solid #ccc!important;
+    border-right: 0px solid #ccc!important;
+    border-top: 0px solid #ccc!important;
+
+}
+
+.header-avatar {
+    bottom: -2px
+}
+
+.header-metadata {
+    margin-top: 0!important;
+    margin-left: 0!important
+}
+.header-info-primary-col1 {
+   .navlist-items.js-navlist-items {
+    background-color: #000;
+    width: 1100px;
+    height: 100px;
+    top: 70px
+} 
+}
+
+
+.listening-report-row.listening-report-row--3-wide {
+    right: 10px!important
+}
+
+.footer {
+    color: #fff!important;
+    background: #E3E3E3;
+    position: relative;
+    z-index: 2!important;
+}
+
+.content-top-inner-wrap {
+    .listening-report-top {
+        top: 12px;
+        width: 1100px;
+        position: absolute
+    }
+    display: table!important
+}
+}
+
 @-moz-document domain("last.fm") {
 html,
 body::before {
-    background: #E3E3E3!important;
+    background: #E3E3E3;
 }
 
 body {
@@ -323,6 +553,7 @@ body {
     -moz-border-radius: 0px;
     border: 1px solid #e3e3e3;
 }
+
 
 .avatar img,
 .cover-art img,
@@ -348,9 +579,9 @@ body {
 
 .header-new-background {
     background: #ffff;
-    border-left: 1px solid #ccc!important;
-    border-right: 1px solid #ccc!important;
-    border-top: 1px solid #ccc!important;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
 }
 
 .col-main {
@@ -360,7 +591,7 @@ body {
 div#content.main-content {
     width: 100%;
     position: relative;
-    padding-top: 80px!important;
+    padding-top: 80px;
     background-color: #0000
 }
 
@@ -379,11 +610,11 @@ div.YAD {
 }
 
 div.container.page-content {
-    background-color: #fff!important;
+    background-color: #fff;
     height: 100%;
-    border-left: 1px solid #ccc!important;
-    border-right: 1px solid #ccc!important;
-    border-bottom: 1px solid #ccc!important;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .header.header--with-avatar.header--overview.header--user {
@@ -464,14 +695,6 @@ div.container.page-content {
 }
 }
 
-@-moz-document url-prefix("https://www.last.fm/home") {
-.recs-feed {
-    margin: 0!important;
-    top: 12px!important;
-    left: 7%!important;
-}
-}
-
 @-moz-document regexp("https?://[^/]+?\\.last\\.fm/music\\/[^\\/]+\\/?$") {
 div#content.main-content {
     width: 120%!important;
@@ -508,7 +731,7 @@ div#content.main-content {
     }
     .section-with-separator.buffer-standard {
         margin-top: 6px
-    } 
+    }
     display: table!important;
     position: absolute!important;
     float: right!important;
@@ -605,7 +828,9 @@ div.col-main {
     display: none
 }
 
-.video-preview, .video-preview-replace, .header-new-gallery-outer {
+.video-preview,
+.video-preview-replace,
+.header-new-gallery-outer {
     display: none
 }
 
@@ -615,7 +840,6 @@ h3 {
     border-top: 1px dotted #ccc;
     padding-top: 10px!important;
 }
-
 }
 
 @-moz-document regexp("https?://[^/]+?\\.last\\.fm/music/.*/.*/.*") {
@@ -654,7 +878,7 @@ div#content.main-content {
     }
     .section-with-separator.buffer-standard {
         margin-top: 6px
-    } 
+    }
     display: table!important;
     position: absolute!important;
     float: right!important;
@@ -751,7 +975,9 @@ div.col-main {
     display: none
 }
 
-.video-preview, .video-preview-replace, .header-new-gallery-outer {
+.video-preview,
+.video-preview-replace,
+.header-new-gallery-outer {
     display: none
 }
 
@@ -761,7 +987,6 @@ h3 {
     border-top: 1px dotted #ccc;
     padding-top: 10px!important;
 }
-
 }
 
 @-moz-document regexp("https?://[^/]+?\\.last\\.fm/music/[^\\/]+\\/[^\\/]+\\/?$") {
@@ -800,7 +1025,7 @@ div#content.main-content {
     }
     .section-with-separator.buffer-standard {
         margin-top: 6px
-    } 
+    }
     display: table!important;
     position: absolute!important;
     float: right!important;
@@ -897,7 +1122,9 @@ div.col-main {
     display: none
 }
 
-.video-preview, .video-preview-replace, .header-new-gallery-outer {
+.video-preview,
+.video-preview-replace,
+.header-new-gallery-outer {
     display: none
 }
 
@@ -907,5 +1134,4 @@ h3 {
     border-top: 1px dotted #ccc;
     padding-top: 10px!important;
 }
-
 }
