@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20241008.20.27
+@version      20241106.14.36
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -690,8 +690,8 @@ div.container.page-content {
 
 .masthead-inner-wrap {
     position: relative;
-    right: 970px;
-    top: 1px;
+    left: 350px;
+    bottom: 11px;
     width: 300px;
 }
 
@@ -713,15 +713,24 @@ div.container.page-content {
     display: none!important;
 }
 
+.masthead-search-toggle {
+    display: none;
+}
+
+.js-navlist-items.navlist-items {
+    right: 15px
+}
+
 .auth-dropdown-menu-wrap {
-    left: -56px!important
+    left: -51px!important
 }
 .auth-dropdown-menu::before {
-    left: 30px!important
+    left: 36px!important
 }
 
 .site-auth.hidden-xs {
-    left: 630px
+    left: 700px;
+    bottom: 1px
 }
 
 .footer {
