@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20241106.14.36
+@version      20241106.17.36
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -689,6 +689,9 @@ div.container.page-content {
 }
 
 .masthead-inner-wrap {
+    .js-navlist-items.navlist-items {
+    right: 15px
+}
     position: relative;
     left: 350px;
     bottom: 11px;
@@ -717,9 +720,7 @@ div.container.page-content {
     display: none;
 }
 
-.js-navlist-items.navlist-items {
-    right: 15px
-}
+
 
 .auth-dropdown-menu-wrap {
     left: -51px!important
