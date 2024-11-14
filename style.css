@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20241106.17.36
+@version      20241114.01.54
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -787,7 +787,7 @@ div#content.main-content {
     .section-with-separator.buffer-standard {
         margin-top: 6px
     }
-    display: table!important;
+    display: none!important;
     position: absolute!important;
     float: right!important;
     width: 370px;
@@ -934,7 +934,7 @@ div#content.main-content {
     .section-with-separator.buffer-standard {
         margin-top: 6px
     }
-    display: table!important;
+    display: none!important;
     position: absolute!important;
     float: right!important;
     width: 370px;
@@ -1115,7 +1115,7 @@ div#content.main-content {
     .section-with-separator.buffer-standard {
         margin-top: 6px
     }
-    display: table!important;
+    display: none!important;
     position: absolute!important;
     float: right!important;
     width: 370px;
