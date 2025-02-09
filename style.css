@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20250209.08.47
+@version      20250209.09.13
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -380,6 +380,26 @@ div#content.main-content {
 
 .header-avatar {
     bottom: 8px
+}
+
+.user-list {
+    width: 1167px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.user-list-item.js-link-block.link-block {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 24px;
+    margin-top: 0;
+    width: 380px;
+    height: 90px;
+}
+
+
+.user-list-about-me {
+    height: 40px;
 }
 }
 
