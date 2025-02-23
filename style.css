@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Classic-esk Style for last.fm
-@version      20250209.09.13
+@version      20250223.03.46
 @namespace    https://userstyles.world/user/LabRatMime
 @description  A style that mimics the earlier last.fm look
 @author       LabRatMime
@@ -8,6 +8,8 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.last.fm/user") {
+/* user page */
+
 body {
     background-color: #E3E3E3!important;
 }
@@ -307,6 +309,8 @@ h2 {
 }
 
 @-moz-document regexp("https://www.last.fm/user/.*/.*") {
+/*  */
+
 .header-info-primary--with-columns {
     .header-info-primary-col1 {
         left: 99px!important;
@@ -404,6 +408,8 @@ div#content.main-content {
 }
 
 @-moz-document regexp("https://www.last.fm/user/.*/library") {
+/* user library */
+
 div.col-main {
     margin-top: 10px!important;
     background-color: #fff0!important;
@@ -442,6 +448,8 @@ h2 {
 }
 
 @-moz-document regexp("https://www.last.fm/user/.*/library/.*") {
+/* user artist/album/song library */
+
 div.col-main {
     margin-top: 10px!important;
     background-color: #fff0!important;
@@ -480,6 +488,8 @@ h2 {
 }
 
 @-moz-document regexp("https://www.last.fm/user/.*/(loved|shoutbox)") {
+/* user loved/shoutbox */
+
 .col-sidebar {
     display: none!important;
 }
@@ -493,6 +503,8 @@ div.col-main {
 }
 
 @-moz-document regexp("https://www.last.fm/user/.*/(obesssions|following|followers|neighbours)") {
+/* user social pages */
+
 .col-sidebar {
     display: none!important;
 }
@@ -505,6 +517,8 @@ div.col-main {
 }
 
 @-moz-document regexp("https:\\/\\/www.last.fm\\/user\\/.*\\/listening-repor.{1,}") {
+/* listening reports */
+
 html,
 body::before,
 body {
@@ -600,6 +614,8 @@ div.container.page-content {
 }
 
 @-moz-document domain("last.fm") {
+/* main page */
+
 html,
 body::before {
     background: #E3E3E3;
@@ -772,6 +788,8 @@ div.container.page-content {
 }
 
 @-moz-document regexp("https?://[^/]+?\\.last\\.fm/music\\/[^\\/]+\\/?$") {
+/* artist page */
+
 div#content.main-content {
     width: 120%!important;
     position: relative;
@@ -821,6 +839,10 @@ div#content.main-content {
     z-index: 1;
 }
 
+.masonry-right-bottom.buffer-standard.hidden-xs.col-sidebar > .buffer-standard.section-with-control.section-with-separator {
+    display: none;
+}
+
 div.col-main {
     margin-top: 10px!important;
     background-color: #fff0!important;
@@ -844,6 +866,7 @@ div.col-main {
     left: 20px;
     margin-left: 200px;
     margin-top: 0px!important;
+
 }
 
 .intabbr.js-abbreviated-counter,
@@ -870,13 +893,19 @@ div.col-main {
 
 .header-new-info-desktop {
     position: relative;
-    bottom: -30px;
+    margin-bottom: -40px;
+    margin-top: 0px;
     left: -10px;
 }
 
 .header-new-title {
     position: relative;
-    bottom: -5px
+    display: block!important;
+    bottom: -5px;
+    font-size: 41px;
+    width: 580px;
+    height: 130px;
+        
 }
 
 .header-new-inner {
@@ -919,6 +948,8 @@ h3 {
 }
 
 @-moz-document regexp("https?://[^/]+?\\.last\\.fm/music/.*/.*/.*") {
+/* song page */
+
 div#content.main-content {
     width: 120%!important;
     position: relative;
@@ -972,6 +1003,10 @@ div#content.main-content {
     border-top: 1px dotted #ccc;
     padding-top: 10px!important;
 }
+}
+
+.masonry-right-bottom.buffer-standard.hidden-xs.col-sidebar > .buffer-standard.section-with-control.section-with-separator {
+    display: none;
 }
 
 div.col-main {
@@ -1028,13 +1063,17 @@ div.col-main {
 
 .header-new-info-desktop {
     position: relative;
-    bottom: -30px;
+    margin-bottom: -40px;
+    margin-top: 0px;
     left: -10px;
 }
 
 .header-new-title {
     position: relative;
-    bottom: -5px
+    bottom: -5px;
+    font-size: 41px;
+    width: 580px;
+    height: 130px
 }
 
 .header-new-inner {
@@ -1100,6 +1139,8 @@ h3 {
 }
 
 @-moz-document regexp("https?://[^/]+?\\.last\\.fm/music/[^\\/]+\\/[^\\/]+\\/?$") {
+/* album page */
+
 div#content.main-content {
     width: 120%!important;
     position: relative;
@@ -1147,6 +1188,10 @@ div#content.main-content {
     border-left: 2px dotted #ccc!important;
     height: 200%;
     z-index: 1;
+}
+
+.header-new {
+    background-color: #fff;
 }
 
 div.col-main {
@@ -1198,13 +1243,17 @@ div.col-main {
 
 .header-new-info-desktop {
     position: relative;
-    bottom: -30px;
+    margin-bottom: -40px;
+    margin-top: 0px;
     left: -10px;
 }
 
 .header-new-title {
     position: relative;
-    bottom: -5px
+    bottom: -5px;
+    font-size: 41px;
+    width: 580px;
+    height: 130px
 }
 
 .header-new-inner {
